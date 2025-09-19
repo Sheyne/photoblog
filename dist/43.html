@@ -3,36 +3,51 @@
     <head>
     <title>Sheyne's Photos</title>
     <style>
-    img {
-        max-width: 100%;
-        max-height: 40em;
-    }
-    html {
-        background-color: #ccc;
-        padding: 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    body {
-        max-width: calc(100% - 2em);
-        width: 80em;
-        background-color: white;
-        margin: 0px;
-        padding: 1em;
-    }
-    nav {
-        display: flex;
-        flex-direction: row;
-    }
-    nav a {
-        flex: 1 1 1;
-    }
-    nav b {
-        flex: 1;
-        text-align: center;
-    }
-    </style>
+        body {
+            max-width: calc(100% - 2em);
+            width: 80em;
+            background-color: white;
+            margin: 0;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        nav {
+            display: flex;
+            flex-direction: row;
+            height: 3em;
+            align-items: center;
+            flex-shrink: 0;
+        }
+        nav a {
+            flex: 1 1 1;
+        }
+        nav b {
+            flex: 1;
+            text-align: center;
+        }
+        h2 {
+            flex-shrink: 0;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: top;
+            flex-grow: 1;
+            box-sizing: border-box;
+        }
+        html {
+            background-color: #ccc;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+</style>
     </head>
     <body>
     <nav>
